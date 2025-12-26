@@ -1,0 +1,114 @@
+.faculty-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.faculty-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.faculty-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #006A4E, #00A86B);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.faculty-info h3 {
+  margin: 0 0 5px 0;
+  color: #006A4E;
+  font-size: 18px;
+}
+
+.designation {
+  color: #666;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.department {
+  color: #888;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.faculty-details {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.faculty-details p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.faculty-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 20px;
+}
+
+.star.filled {
+  color: #FFD700;
+}
+
+.star.half {
+  color: #FFD700;
+  opacity: 0.5;
+}
+
+.star.empty {
+  color: #ddd;
+}
+
+.rating-text {
+  color: #666;
+  font-size: 14px;
+}
+
+.view-details-btn {
+  width: 100%;
+  padding: 12px;
+  background: #006A4E;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.view-details-btn:hover {
+  background: #005a42;
+}

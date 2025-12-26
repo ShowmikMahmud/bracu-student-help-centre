@@ -14,3 +14,17 @@ export const contactAPI = {
   addContact: (contactData) => 
     axios.post(`${API_URL}/contacts`, contactData)
 };
+export const facultyAPI = {
+  getAllFaculty: () => axios.get(`${API_URL}/faculty`),
+  getFacultyByInitial: (initial) => axios.get(`${API_URL}/faculty/${initial}`),
+  getFacultyByDepartment: (department) => 
+    axios.get(`${API_URL}/faculty/department/${department}`),
+  searchFaculty: (query) => 
+    axios.get(`${API_URL}/faculty/search?query=${query}`),
+  addFaculty: (facultyData) => 
+    axios.post(`${API_URL}/faculty`, facultyData),
+  addReview: (initial, reviewData) => 
+    axios.post(`${API_URL}/faculty/${initial}/reviews`, reviewData),
+  getReviews: (initial) => 
+    axios.get(`${API_URL}/faculty/${initial}/reviews`)
+};
